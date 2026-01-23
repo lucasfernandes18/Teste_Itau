@@ -1,4 +1,4 @@
-package Java10x.Itau;
+package Java10x.Itau.Estatisticas;
 
 public record EstataisticaDTO(
         Long count,
