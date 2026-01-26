@@ -41,6 +41,7 @@ public class TransacoesController {
     @DeleteMapping
     public ResponseEntity deletar (){
         transacaoRepository.deletarDados();
+        log.info("Transações deletadas");
         return ResponseEntity.status(HttpStatus.OK).build();
     }
 
