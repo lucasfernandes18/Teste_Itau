@@ -1,5 +1,6 @@
 package Java10x.Itau.Estatisticas;
 
+import Java10x.Itau.Docs.EstatisticaControllerDoc;
 import Java10x.Itau.TransacaoRepository;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
@@ -17,7 +18,7 @@ import java.time.OffsetDateTime;
 @Slf4j
 @RestController
 @RequestMapping("/estatistica")
-public class EstatisticasController {
+public class EstatisticasController implements EstatisticaControllerDoc {
     @Autowired
     private  TransacaoRepository transacaoRepository;
 
